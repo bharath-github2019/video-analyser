@@ -4,7 +4,7 @@ An AI-powered chatbot that lets you ask questions about any local video file. Bu
 
 ---
 
-## ✨ Features
+## Features
 
 - **Local video support** — Works with MP4, AVI, MOV, MKV, and more
 - **Multimodal AI** — Uses GPT-4o vision to understand video frames
