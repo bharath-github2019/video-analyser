@@ -179,35 +179,6 @@ You can tune the following in the code:
 
 ---
 
-## 🛡️ Security Best Practices
-
-- ✅ Store all secrets in `.env` (never hardcode)
-- ✅ Add `.env` to `.gitignore`
-- ✅ Rotate API keys regularly
-- ✅ Never share `.env` contents in chats, screenshots, or commits
-- ✅ Use approved corporate endpoints for sensitive data
-
----
-
-## 🐛 Troubleshooting
-
-### `404 Resource not found`
-- Wrong endpoint URL or deployment name
-- Verify `SHARED_SERVICE_BASE_URL` and `SHARED_SERVICE_MODEL`
-
-### `Connection error` / SSL issues
-- Corporate proxy/firewall — set `HTTPS_PROXY` in `.env`
-- Custom CA needed — set `REQUESTS_CA_BUNDLE` in `.env`
-
-### `Image input not supported`
-- Your model deployment isn't vision-capable
-- Use a `gpt-4o`, `gpt-4o-mini`, or `gpt-4-turbo` deployment
-
-### Video won't open
-- Codec issue — try converting to MP4 (H.264) with [HandBrake](https://handbrake.fr/)
-
----
-
 ## 🗺️ Roadmap
 
 - [ ] Web UI (Streamlit / Flask)
@@ -218,15 +189,5 @@ You can tune the following in the code:
 - [ ] MongoDB conversation logging
 - [ ] REST API wrapper
 - [ ] Docker support
-
----
-
-## 🤝 Contributing
-
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feature/awesome-feature`)
-3. Commit your changes (`git commit -m 'Add awesome feature'`)
-4. Push to the branch (`git push origin feature/awesome-feature`)
-5. Open a Pull Request
 
 ---
