@@ -1,0 +1,4 @@
+opencv-python
+openai
+python-dotenv
+requests
