@@ -4,6 +4,16 @@ An AI-powered chatbot that lets you ask questions about any local video file. Bu
 
 ---
 
+## 🧠 How It Works
+
+1. **Frame Extraction** — OpenCV opens the video, calculates total frames, and samples 10 evenly-spaced frames.
+2. **Image Optimization** — Each frame is resized to ≤800px wide and JPEG-encoded.
+3. **Base64 Encoding** — Frames are converted to base64 strings to fit in JSON API requests.
+4. **AI Conversation** — Frames + question are sent to GPT-4o on the first turn. The chat history retains context for follow-up questions.
+5. **Response** — GPT-4o returns a natural-language answer, which is printed to the terminal.
+
+---
+
 ## Features
 
 - **Local video support** — Works with MP4, AVI, MOV, MKV, and more
@@ -167,27 +177,5 @@ You can tune the following in the code:
 | `max_tokens` | `ai.py` | 500 | Max response length |
 | Resize threshold | `video_processor.py` | 800px | Max frame width |
 
----
 
-## 🧠 How It Works
 
-1. **Frame Extraction** — OpenCV opens the video, calculates total frames, and samples 10 evenly-spaced frames.
-2. **Image Optimization** — Each frame is resized to ≤800px wide and JPEG-encoded.
-3. **Base64 Encoding** — Frames are converted to base64 strings to fit in JSON API requests.
-4. **AI Conversation** — Frames + question are sent to GPT-4o on the first turn. The chat history retains context for follow-up questions.
-5. **Response** — GPT-4o returns a natural-language answer, which is printed to the terminal.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Web UI (Streamlit / Flask)
-- [ ] Audio transcription with Whisper
-- [ ] Scene-change-based smart frame selection
-- [ ] Multi-video comparison
-- [ ] PDF report export
-- [ ] MongoDB conversation logging
-- [ ] REST API wrapper
-- [ ] Docker support
-
----
