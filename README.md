@@ -2,6 +2,8 @@
 
 An AI-powered chatbot that lets you ask questions about any local video file. Built with Python, OpenCV, and GPT-4o (Azure OpenAI via API keys).
 
+<img width="960" height="514" alt="Screenshot 2026-05-27 232359" src="https://github.com/user-attachments/assets/d80eefe9-49c0-4da9-a0ef-fa07fd4222d1" />
+
 ---
 
 ## 🧠 How It Works
@@ -178,5 +180,5 @@ You can tune the following in the code:
 | Resize threshold | `video_processor.py` | 800px | Max frame width |
 
 
-<img width="960" height="514" alt="Screenshot 2026-05-27 232359" src="https://github.com/user-attachments/assets/d80eefe9-49c0-4da9-a0ef-fa07fd4222d1" />
+
 
